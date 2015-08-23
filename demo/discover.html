@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" type="image/png" href="img/crowdfundrr_logo.png">
+    <link rel="icon" type="image/png" href="img/crowdlendrr_logo.png">
 
-    <title>WeiFund - A Decentralized Open-Source Crowd Funding Platform</title>
+    <title>WeiLend - A Decentralized Open-Source Crowd Funding Platform</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     
     <script type="text/javascript" src="js/lib/bignumber.js/bignumber.min.js"></script>
     <script type="text/javascript" src="js/lib/ethereum.js"></script>
-    <script type="text/javascript" src="js/CrowdFundrr.js"></script>
+    <script type="text/javascript" src="js/CrowdLendrr.js"></script>
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,7 +41,7 @@
 		font-weight: lighter;
 	}
 	
-	.crowdfundrr_C
+	.crowdlendrr_C
 	{
 		color: #FF6699;
 	}
@@ -63,7 +63,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="index.html#"><h4 style="margin: 0px;">WeiFund <i class="glyphicon text-primary glyphicon-upload"></i></h4></a>
+                <a class="navbar-brand topnav" href="index.html#"><h4 style="margin: 0px;">WeiLend <i class="glyphicon text-primary glyphicon-upload"></i></h4></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -112,7 +112,7 @@
     
     <!-- Big Project Display -->
     <!--
-    <h2 id="c_name">Jerry's Ice Cream Shop Campaign</h2>
+    <h2 id="c_name">Jerry's Ice Cream Shop Loan</h2>
     
     <h3><a href="" id="c_website">www.jerrysmission.com</a> <span class="small" id="is_verified"></span></h3>
     
@@ -134,22 +134,22 @@
     <br><br>
     
     <div class=" input-group input-group-lg">
-        <input type="hidden" id="campaign_id">
+        <input type="hidden" id="loan_id">
         <input type="number" id="donate_amount" class="form-control" aria-describedby="sizing-addon1" style="width: 200px;" placeholder="Amount">
         
-        <a href="#" onClick="donate_campaign();" class="btn btn-primary btn-default btn-lg">Donate to Campaign</a>
+        <a href="#" onClick="donate_loan();" class="btn btn-primary btn-default btn-lg">Donate to Loan</a>
     </div>
     -->
     
-    <!-- Search Campaign -->
+    <!-- Search Loan -->
     <!--
-    <h2>Search Campaign</h2>
+    <h2>Search Loan</h2>
     
     <br>
     
     <div class=" input-group input-group-lg">
-        <input type="text" id="campaign_id" class="form-control" aria-describedby="sizing-addon1" style="width: 200px; margin-right: 10px;" placeholder="Campaign #ID">
-        <a href="#" class="btn btn-default btn-lg" onClick="get_campaign();">Search</a>
+        <input type="text" id="loan_id" class="form-control" aria-describedby="sizing-addon1" style="width: 200px; margin-right: 10px;" placeholder="Loan #ID">
+        <a href="#" class="btn btn-default btn-lg" onClick="get_loan();">Search</a>
     </div>
     
     <br><br>
@@ -200,7 +200,7 @@
 	
 	</style>
 
-	<a  name="campaign"></a>
+	<a  name="loan"></a>
     <div class="content-section-b">
 
         <div class="container" id="discover_section">
@@ -265,7 +265,7 @@
                 <div class="col-xs-6 col-md-3 cf_d_col">
                 
                     <div class="panel panel-default cf-panel">
-                     <a href="tracker.html?id=1"><div class="panel-heading cf-panel-header" style="padding: 0px; background-image: url(img/crowdfundrr_logo.png);"><div class="panel-heading cf-panel-header" style="background-image: url(http://www.bonereader.com/wp-content/uploads/2012/12/20-Necrovation-Necrovation-500x300.jpg);"></div></div></a>
+                     <a href="tracker.html?id=1"><div class="panel-heading cf-panel-header" style="padding: 0px; background-image: url(img/crowdlendrr_logo.png);"><div class="panel-heading cf-panel-header" style="background-image: url(http://www.bonereader.com/wp-content/uploads/2012/12/20-Necrovation-Necrovation-500x300.jpg);"></div></div></a>
                       <div class="panel-body">
                       
                             <h4 class="light"><a href="tracker.html?id=1">Toronto Creative Arts: Art Alive Event</a></h4>                        
@@ -290,7 +290,7 @@
                 <div class="col-xs-6 col-md-3 cf_d_col">
                 
                     <div class="panel panel-default cf-panel">
-                    <a href="tracker.html?id=1"><div class="panel-heading cf-panel-header" style="padding: 0px; background-image: url(img/crowdfundrr_logo.png);"><div class="panel-heading cf-panel-header" style="background-image: url(http://static1.squarespace.com/static/51941f9fe4b0e17712857720/t/536bd1f3e4b0098a7649eaff/1399575028271/darkwallet.png);"></div></div></a>
+                    <a href="tracker.html?id=1"><div class="panel-heading cf-panel-header" style="padding: 0px; background-image: url(img/crowdlendrr_logo.png);"><div class="panel-heading cf-panel-header" style="background-image: url(http://static1.squarespace.com/static/51941f9fe4b0e17712857720/t/536bd1f3e4b0098a7649eaff/1399575028271/darkwallet.png);"></div></div></a>
                       <div class="panel-body">
                       
                             <h4 class="light"><a href="tracker.html?id=1">The Cryptocurrency Festival</a></h4>                        
@@ -387,7 +387,7 @@
                 <div class="col-xs-6 col-md-3 cf_d_col">
                 
                     <div class="panel panel-default cf-panel">
-                    <a href="tracker.html?id=1"><div class="panel-heading cf-panel-header" style="padding: 0px; background-image: url(img/crowdfundrr_logo.png);"><div class="panel-heading cf-panel-header" style="background-image: url(http://www.bonereader.com/wp-content/uploads/2012/12/20-Necrovation-Necrovation-500x300.jpg);"></div></div></a>
+                    <a href="tracker.html?id=1"><div class="panel-heading cf-panel-header" style="padding: 0px; background-image: url(img/crowdlendrr_logo.png);"><div class="panel-heading cf-panel-header" style="background-image: url(http://www.bonereader.com/wp-content/uploads/2012/12/20-Necrovation-Necrovation-500x300.jpg);"></div></div></a>
                       <div class="panel-body">
                       
                             <h4 class="light"><a href="tracker.html?id=1">Toronto Creative Arts: Art Alive Event</a></h4>                        
@@ -412,7 +412,7 @@
                 <div class="col-xs-6 col-md-3 cf_d_col">
                 
                     <div class="panel panel-default cf-panel">
-                    <a href="tracker.html?id=1"><div class="panel-heading cf-panel-header" style="padding: 0px; background-image: url(img/crowdfundrr_logo.png);"><div class="panel-heading cf-panel-header" style="background-image: url(http://www.bonereader.com/wp-content/uploads/2012/12/20-Necrovation-Necrovation-500x300.jpg);"></div></div></a>
+                    <a href="tracker.html?id=1"><div class="panel-heading cf-panel-header" style="padding: 0px; background-image: url(img/crowdlendrr_logo.png);"><div class="panel-heading cf-panel-header" style="background-image: url(http://www.bonereader.com/wp-content/uploads/2012/12/20-Necrovation-Necrovation-500x300.jpg);"></div></div></a>
                       <div class="panel-body">
                       
                             <h4 class="light"><a href="tracker.html?id=1">Live Music @ The Bar</a></h4>                        
@@ -522,7 +522,7 @@
                             <a href="index.html#contact">Contact</a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted small">Copyright &copy; WeiFund 2014. All Rights Reserved</p>
+                    <p class="copyright text-muted small">Copyright &copy; WeiLend 2015. All Rights Reserved</p>
                 </div>
             </div>
         </div>

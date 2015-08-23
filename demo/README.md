@@ -1,8 +1,8 @@
-# weifund.github.io
-WeiFund Website
+# weilend.github.io
+WeiLend Website
 
 View the site here:
-http://weifund.github.io
+http://weilend.github.io
 
-Main WeiFund REPO:
-http://github.com/weifund/weifund
+Main WeiLend REPO:
+http://github.com/weilend/weilend

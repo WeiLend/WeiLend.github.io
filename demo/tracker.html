@@ -9,9 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     
-    <link rel="icon" type="image/png" href="img/crowdfundrr_logo.png">
+    <link rel="icon" type="image/png" href="img/crowdlendrr_logo.png">
 
-    <title>WeiFund - A Decentralized Open-Source Crowd Funding Platform</title>
+    <title>WeiLend - A Decentralized Open-Source P2P Lending Platform</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -26,7 +26,7 @@
     
     <script type="text/javascript" src="js/lib/bignumber.js/bignumber.min.js"></script>
     <script type="text/javascript" src="js/lib/ethereum.js"></script>
-    <script type="text/javascript" src="js/CrowdFundrr.js"></script>
+    <script type="text/javascript" src="js/CrowdLendrr.js"></script>
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -62,7 +62,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="index.html#"><h4 style="margin: 0px;">WeiFund <i class="glyphicon text-primary glyphicon-upload"></i></h4></a>
+                <a class="navbar-brand topnav" href="index.html#"><h4 style="margin: 0px;">WeiLend <i class="glyphicon text-primary glyphicon-upload"></i></h4></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -86,27 +86,27 @@
         <!-- /.container -->
     </nav>
 
-	<a  name="campaign"></a>
+	<a  name="loan"></a>
     <div class="content-section-b">
 
         <div class="container">
 
             <div class="row" style="margin-top: 40px;">
                 <div class="col-lg-5 col-sm-6" style="min-height: 500px;">
-                    <h2>Search Campaign</h2>
+                    <h2>Search Loan</h2>
                     
                     <br>
                     
                     <div class=" input-group input-group-lg">
-                    	<input type="text" id="campaign_id" class="form-control" aria-describedby="sizing-addon1" style="width: 200px; margin-right: 10px;" placeholder="Campaign #ID">
-                        <a href="#" class="btn btn-default btn-lg" onClick="get_campaign();">Search</a>
+                    	<input type="text" id="loan_id" class="form-control" aria-describedby="sizing-addon1" style="width: 200px; margin-right: 10px;" placeholder="Loan #ID">
+                        <a href="#" class="btn btn-default btn-lg" onClick="get_loan();">Search</a>
                     </div>
                     
                     <br><br>
                     
                     <h2>Recent</h2><br>
                     
-                     <div id="most_recent_campaigns">
+                     <div id="most_recent_loans">
                          <div>
                             <h4 class="light"><a href="">Open Source: Radio Potdast</a></h4>                        
                             <div class="progress" style="height: 7px; margin-bottom: 10px; max-width: 400px;">
@@ -151,34 +151,34 @@
                 
                     <div class="panel panel-default" style="min-width: 455px;">
                       <div class="panel-body">
-                            <h2 id="c_name" style="margin-top: 0px;">Jerry's Ice Cream Shop Campaign</h2>
+                            <h2 id="l_operationName" style="margin-top: 0px;">Jerry's Ice Cream Shop Loan</h2>
                     
-                            <h3><a href="" id="c_website">www.jerrysmission.com</a> <span class="small" id="is_verified"></span></h3>
+                            <h3><a href="" id="l_website">www.jerrysmission.com</a> <span class="small" id="is_verified"></span></h3>
                             
                             <div class="progress">
-                              <div id="c_progress" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="16" aria-valuemin="0" aria-valuemax="20" style="width: 60%;">
+                              <div id="l_progress" class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="16" aria-valuemin="0" aria-valuemax="20" style="width: 60%;">
                               </div>
                             </div>
                             
                             <ul class="list-inline">
-                                <li><h1 style="margin-bottom: 10px;" id="c_backers">45</h1>Backers
+                                <li><h1 style="margin-bottom: 10px;" id="l_backers">45</h1>Backers
                                 </li>
-                                <li><h1 id="c_amount">E16,500</h1>pledged of <span id="c_goal">E20,000</span>
+                                <li><h1 id="l_amount">E16,500</h1>pledged of <span id="l_goal">E20,000</span>
                                 </li>
-                                <li><h1 id="c_days">13</h1>Days to Go
+                                <li><h1 id="l_days">13</h1>Days to Go
                                 </li>
                             </ul>
                             
                             <br><br>
                             
-                            <!-- // $('#campaign_id').val(); $('#donate_amount').val(); function donate_campaign(){}; -->
+                            <!-- // $('#loan_id').val(); $('#donate_amount').val(); function donate_loan(){}; -->
                             
                             <div class=" input-group input-group-lg">
-                                <input type="hidden" id="campaign_id">
+                                <input type="hidden" id="loan_id">
                                 <input type="number" id="donate_amount" class="form-control" aria-describedby="sizing-addon1" style="width: 200px;" placeholder="Amount (e.g. 10 Ether)">
                                                           	                                                               
-                             <a href="#" id="payout_to_campaign" onClick="payout_campaign();" class="btn btn-success btn-default btn-lg" style="display: none;">Payout to Beneficiary</a>
-                             <a href="#" id="donate_to_campaign" onClick="donate_campaign();" class="btn btn-primary btn-default btn-lg">Donate to Campaign</a>
+                             <a href="#" id="payout_to_loan" onClick="payout_loan();" class="btn btn-success btn-default btn-lg" style="display: none;">Payout to Beneficiary</a>
+                             <a href="#" id="donate_to_loan" onClick="donate_loan();" class="btn btn-primary btn-default btn-lg">Donate to Loan</a>
                             </div>
                       </div>
                     </div> <!-- End Panel -->
@@ -209,7 +209,7 @@
                     <h2>Get Your Project Funded</h2>
                 </div>
                 <div class="col-lg-6">
-                	<a href="index.html#new" class="btn btn-primary btn-default btn-lg">Start A Campaign</a>
+                	<a href="index.html#new" class="btn btn-primary btn-default btn-lg">Start A Loan</a>
                 </div>
             </div>
 
@@ -241,7 +241,7 @@
                             <a href="index.html#contact">Contact</a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted small">Copyright &copy; WeiFund 2014. All Rights Reserved</p>
+                    <p class="copyright text-muted small">Copyright &copy; WeiLend 2015. All Rights Reserved</p>
                 </div>
             </div>
         </div>
